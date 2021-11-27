@@ -23,7 +23,7 @@ function b() {
       let temp = await b();
       details.summary += temp + ", ";
       //console.log(temp);
-      if (temp != "Out") {
+      if (temp != "Out" && details.wickets !=10) {
         details.score = details.score + temp;
         details.balls = details.balls + 1;
       } else {
