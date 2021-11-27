@@ -1,59 +1,67 @@
 <!DOCTYPE html>
 <html>
-<html>
+  <html>
 
-<head>
-    <title>Play Cricket</title>
-    <style>
-         td,tr {
+    <head>
+      <title>Play Cricket</title>
+      <style>
+        td,
+        tr {
           border: 1px solid black;
-          padding:20px;
+          padding: 20px;
         }
+
         #blink {
-  animation: blinker 1s linear infinite;
-}
+          animation: blinker 1s linear infinite;
+        }
 
-@keyframes blinker {  
-  50% { opacity: 0; }
-}
-        </style>
-<script src="https://raw.githubusercontent.com/rajassamples/Sample_javascript/main/Homepage.js"></script>
-      
-</head>
+        @keyframes blinker {
+          50% {
+            opacity: 0;
+          }
+        }
 
-<body>
+      </style>
+      <script src="https://raw.githubusercontent.com/rajassamples/Sample_javascript/main/Homepage.js"></script>
 
-    <caption>Play a Cricket match with your opponent</caption><br/>
-    <br/>
-    <select>
-      <option>1</option>
-      <option selected="selected">5</option>
-      <option>20</option>
-    </select><p style="display:inline"> Select Overs to play
-    <small style="color:#9966ff" id="blink"> Coming Soon !</small></p>
-    <br><br>
-    <table>
+    </head>
+
+    <body>
+
+      <caption>Play a Cricket match with your opponent</caption><br />
+      <br />
+      <select>
+        <option>1</option>
+        <option selected="selected">5</option>
+        <option>20</option>
+      </select>
+      <p style="display:inline"> Select Overs to play
+        <small style="color:#9966ff" id="blink"> Coming Soon !</small></p>
+      <br><br>
+      <table>
 
         <tr>
-            <td>Player 1</td>
-            <td>Player 2</td>
+          <td>Player 1</td>
+          <td>Player 2</td>
         </tr>
         <tr>
-            <td id="fp"></td>
-            <td id="sp"></td>
+          <td id="fp"></td>
+          <td id="sp"></td>
         </tr>
-        <tr  style="text-align: center;">
-            <td colspan="2">
-                <button id="play" onclick="aa()">Play</button>
-            </td>
+        <tr style="text-align: center;">
+          <td colspan="2">
+            <button id="play" onclick="aa()">Play</button>
+          </td>
         </tr>
 
-    </table>
-    <h3 id="result" style="color:royalblue;"></h3>
-    <p><b>Score Board:</b> <br></p>
-    <small id="summary">
-    </small>
+      </table>
+      <h3 id="result" style="color:royalblue;"></h3>
+      <p><b>Score Board:</b> <br></p>
+      <small id="summary">
+      </small>
 
-</body>
-</html>
+    </body>
+
+  </html>
+
 </html>
