@@ -19,7 +19,7 @@ function b() {
       balls: 0,
       summary: ""
     };
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 50; i++) {
       let temp = await b();
       details.summary += temp + ", ";
       //console.log(temp);
