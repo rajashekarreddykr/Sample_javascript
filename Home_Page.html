@@ -9,6 +9,13 @@
           border: 1px solid black;
           padding:20px;
         }
+        #blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
         </style>
 <script src="https://raw.githubusercontent.com/rajassamples/Sample_javascript/main/Homepage.js"></script>
       
@@ -22,7 +29,8 @@
       <option>1</option>
       <option>5</option>
       <option>20</option>
-    </select><p style="display:inline"> Select Overs to play</p>
+    </select><p style="display:inline"> Select Overs to play
+    <small style="color:pink" id="blink"> Coming Soon !</small></p>
     <br><br>
     <table>
 
