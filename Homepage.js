@@ -5,8 +5,13 @@ function b() {
       resolve(val);
       //console.log(val);
     } else {
+    if (val == 0) {
       resolve("Out");
       //console.log("Out");
+      }
+      else{
+      resolve(1);
+      }
     }
     reject("error")
   })
@@ -19,13 +24,13 @@ async function a() {
     balls: 0,
     summary: ""
   };
-  for (let i = 0; i < 50; i++) {
+  for (let i = 0; i < 30; i++) {
     let temp = await b();
 
     //console.log(temp);
-    
+
     if (details.wickets < 10) {
-    details.summary += temp + ", ";
+      details.summary += temp + ", ";
       if (temp != "Out") {
 
         details.score = details.score + temp;
@@ -75,4 +80,5 @@ function aa() {
   catch((e) => {
     console.log(e);
   })
+
 }
